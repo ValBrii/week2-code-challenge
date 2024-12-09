@@ -34,6 +34,7 @@ form.addEventListener('submit', (event) => {
     input.value = '';
   }
 });
+//To mark item as purchased, click on the item 
 
 // Add an event listener to the "Clear List" button
 clearButton.addEventListener('click', () => {
