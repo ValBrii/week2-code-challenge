@@ -26,3 +26,21 @@ button {
 button:hover {
     background-color:rgb(216, 175, 203);
 }
+
+#item-list li {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: rgb(216, 175, 203);
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  /* Style for purchased items */
+  .purchased {
+    text-decoration: line-through;
+    color: gray;
+
+    color: rgb(244, 228, 7);
+  }

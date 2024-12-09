@@ -1,42 +1,53 @@
-// Select the form, input, list, and clear button elements
+// Select the form, input, list, and buttons
 const form = document.getElementById('Add Item');
 const input = document.getElementById('Item name');
 const itemList = document.getElementById('item-list');
 const clearButton = document.getElementById('clear-btn');
 
+// Prepopulate the list with some example items
+const Items = [];
+
+// Add example items to the list
+Items.forEach((item, index) => {
+  const listItem = document.createElement('li');
+  listItem.textContent = item;
+
+  // Mark 'Bread' and 'Eggs' as purchased by default
+  if (index === 1 || index === 2) {
+    listItem.classList.add('purchased');
+  }
+
+  // Add click event to toggle purchased state
+  listItem.addEventListener('click', () => {
+    listItem.classList.toggle('purchased');
+  });
+
+  // Append to the list
+  itemList.appendChild(listItem);
+});
+
 // Add an event listener to the form
 form.addEventListener('submit', (event) => {
-  // Prevent the default form submission behavior
   event.preventDefault();
 
-  // Get the value of the input field
   const newItem = input.value.trim();
 
-  // Check if the input is not empty
   if (newItem !== '') {
-    // Create a new list item
     const listItem = document.createElement('li');
     listItem.textContent = newItem;
 
-    // Add a click event to mark the item as purchased
     listItem.addEventListener('click', () => {
       listItem.classList.toggle('purchased');
     });
 
-    // Append the new item to the list
     itemList.appendChild(listItem);
-
-    // Clear the input field
     input.value = '';
   }
 });
 
 // Add an event listener to the "Clear List" button
 clearButton.addEventListener('click', () => {
-  // Remove all items from the list
   itemList.innerHTML = '';
 });
-
-
 
 
