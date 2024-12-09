@@ -4,7 +4,7 @@ const input = document.getElementById('Item name');
 const itemList = document.getElementById('item-list');
 const clearButton = document.getElementById('clear-btn');
 
-// Prepopulate the list with some example items
+// Array of the items
 const Items = [];
 
 // Add example items to the list
@@ -12,19 +12,10 @@ Items.forEach((item) => {
   const listItem = document.createElement('li');
   listItem.textContent = item;
 
-  
-  
+})
+   
 
-  // Add click event to toggle purchased state
-  listItem.addEventListener('click', () => {
-    listItem.classList.toggle('purchased');
-  });
-
-  // Append to the list
-  itemList.appendChild(listItem);
-});
-
-// Add an event listener to the form
+  // Add an event listener to the form
 form.addEventListener('submit', (event) => {
   event.preventDefault();
 
