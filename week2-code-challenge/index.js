@@ -39,3 +39,5 @@ form.addEventListener('submit', (event) => {
 clearButton.addEventListener('click', () => {
   itemList.innerHTML = '';
 });
+
+
