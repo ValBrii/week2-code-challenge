@@ -1,6 +1,10 @@
 # Week 2 code challenge :Interactive Shopping List
 This challenge combines array iteration, DOM manipulation, and event handling to create an interactive shopping list application.
 
+## Features
+- Add items to the shopping list
+- Clear the entire shopping list
+- Mark items as purchased
 
 ## Technologies used
 - HTML
@@ -43,6 +47,7 @@ git push origin feature/YourFeature
 5. Open a pull request
 
 ## License
+Distributed under MIT license
 
 
 ## Contact Information
