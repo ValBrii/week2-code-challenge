@@ -1,10 +1,8 @@
-// Shopping list array to store items
-let shoppingList = [];
-
-// Select the DOM elements
-const itemInput = document.getElementById('item-input');
-const addButton = document.getElementById('add-btn');
-const clearButton = document.getElementById('clear-btn');
+// Select the form, input, and list elements
+const form = document.getElementById('Add Item');
+const input = document.getElementById('Item name');
 const itemList = document.getElementById('item-list');
 
-// Function to render the shopping list in the DOM
+form.addEventListener("submit", function(event){
+    event.preventDefault
+})
