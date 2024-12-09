@@ -50,7 +50,7 @@ button:hover {
     color: rgba(1, 123, 211, 0.89);
   }
 
-  /* Adjust the width and height of the text input */
+  
 #Item\ name {
     width: 150px;      
     height: 15px;      
@@ -58,6 +58,14 @@ button:hover {
     padding: 10px;     
   }
   
+footer {
+    font-size: 1.1rem;
+    background-color: gray;
+    text-align: center;
+    padding: 2px;
+    margin-bottom: 100px;
+    margin-top: 250px;
+} 
 
 
   
