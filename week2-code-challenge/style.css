@@ -41,17 +41,14 @@ button:hover {
     cursor: pointer;
 }
 
-  /* Style for purchased items */
+  
   .purchased {
     text-decoration: line-through;
     color: gray;
 
     color: rgb(244, 228, 7);
   }
-  input::placeholder {
-    padding: 20px;          /* Placeholder text will be red */
-    font-size: 14px;     /* Placeholder text will have a smaller font size */
-    font-style: italic;
-    size: 20px;  /* Placeholder text will be italic */
-  }
+  
+
+  
   
