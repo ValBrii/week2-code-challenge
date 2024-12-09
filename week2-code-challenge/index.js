@@ -8,11 +8,12 @@ const clearButton = document.getElementById('clear-btn');
 const Items = [];
 
 // Add example items to the list
-Items.forEach((item, index) => {
+Items.forEach((item) => {
   const listItem = document.createElement('li');
   listItem.textContent = item;
 
- 
+  
+  
 
   // Add click event to toggle purchased state
   listItem.addEventListener('click', () => {
@@ -27,7 +28,7 @@ Items.forEach((item, index) => {
 form.addEventListener('submit', (event) => {
   event.preventDefault();
 
-  const newItem = input.value;
+  const newItem = input.value.trim();
 
   if (newItem !== '') {
     const listItem = document.createElement('li');
@@ -46,5 +47,3 @@ form.addEventListener('submit', (event) => {
 clearButton.addEventListener('click', () => {
   itemList.innerHTML = '';
 });
-
-
