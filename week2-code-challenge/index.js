@@ -25,6 +25,7 @@ form.addEventListener('submit', (event) => {
     const listItem = document.createElement('li');
     listItem.textContent = newItem;
 
+    // Add an event listener to the purchased items
     listItem.addEventListener('click', () => {
       listItem.classList.toggle('purchased');
     });
