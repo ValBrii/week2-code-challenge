@@ -12,10 +12,7 @@ Items.forEach((item, index) => {
   const listItem = document.createElement('li');
   listItem.textContent = item;
 
-  // Mark 'Bread' and 'Eggs' as purchased by default
-  if (index === 1 || index === 2) {
-    listItem.classList.add('purchased');
-  }
+ 
 
   // Add click event to toggle purchased state
   listItem.addEventListener('click', () => {
@@ -30,7 +27,7 @@ Items.forEach((item, index) => {
 form.addEventListener('submit', (event) => {
   event.preventDefault();
 
-  const newItem = input.value.trim();
+  const newItem = input.value;
 
   if (newItem !== '') {
     const listItem = document.createElement('li');
